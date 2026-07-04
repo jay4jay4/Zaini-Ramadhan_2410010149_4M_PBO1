@@ -40,10 +40,13 @@ public class MainDrone {
 }
 ```
 
-2. **Object** adalah instance dari class. Pada kode ini, `Drone[] daftarDrone = new Drone[4];, Penyewa penyewa = new Penyewa(nama, hp);, Transaksi transaksi = new Transaksi(penyewa, drone, hari);` adalah contoh pembuatan object.
+2. **Object** adalah instance dari class. Pada kode ini, `daftarDrone[0] = new DroneKamera("DJI Mini 4 Pro", 250000);, Penyewa penyewa = new Penyewa(nama, hp);, Transaksi transaksi = new Transaksi(penyewa, drone, hari);` adalah contoh pembuatan object.
 
 ```bash
-Drone[] daftarDrone = new Drone[4];
+daftarDrone[0] = new DroneKamera("DJI Mini 4 Pro", 250000);
+daftarDrone[1] = new DroneKamera("DJI Air 3S", 400000);
+daftarDrone[2] = new DroneFPV("DJI Avata 2", 300000);
+daftarDrone[3] = new DroneFPV("BetaFPV Cetus X", 150000);
 
 Penyewa penyewa = new Penyewa(nama, hp);
 
@@ -117,7 +120,7 @@ Transaksi transaksi = new Transaksi(penyewa, drone, hari);
     }
 ```
 
-6. **Accessor** atau getter digunakan untuk mengambil nilai dari suatu atribut. Pada kode ini, `getNama`, `getHargaSewa`, `getJenis`, `getFakultas`, dan `getNoHp` adalah contoh method accessor.
+6. **Accessor** atau getter digunakan untuk mengambil nilai dari suatu atribut. Pada kode ini, `getNama`, `getHargaSewa`, `getJenis`, dan `getNoHp` adalah contoh method accessor.
 
 ```bash
     class Drone
@@ -154,7 +157,7 @@ Transaksi transaksi = new Transaksi(penyewa, drone, hari);
 
 ```
 
-7. **Encapsulation** adalah konsep menyembunyikan data dengan membuat atribut menjadi private dan hanya bisa diakses melalui method. Pada kode ini, atribut `nama` dan `npm` dienkapsulasi dan hanya bisa diakses melalui method getter dan setter.
+7. **Encapsulation** adalah konsep menyembunyikan data dengan membuat atribut menjadi private dan hanya bisa diakses melalui method. Pada kode ini, atribut `nama`, `hargaSewa`, `noHp`, `penyewa`, `drone`, dan `lamaSewa` dienkapsulasi dan hanya bisa diakses melalui method getter dan setter.
 
 ```bash
     class Drone
